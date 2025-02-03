@@ -1,0 +1,29 @@
+nav {
+    z-index: 1000;
+    background-color: #e396c3; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-around; 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    background-color: #f8689a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s; 
+    margin: 0 15px; 
+}
+
+nav a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+    text-decoration: underline; 
+}
+
