@@ -5,6 +5,7 @@
 1. I changed in the service from email to firstName
 2. the exeption that was catched: 400 in logUp component- if the user exists,
                                   401 in LogIn component- if the user doesnt exists
+3. I changed to react 19, but I didnt delete the ".provider" because if deleted it, it's doesnt work well
                                   ```
 תודה רבה על השנה המקסימה!
 

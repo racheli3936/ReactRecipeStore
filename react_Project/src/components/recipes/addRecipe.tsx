@@ -22,8 +22,8 @@ const schema = object({
     title: string().required('recipe name is require'),
     description: string(),
     ingredients: array()
-    .of(string().required('Ingredient is required')) // Each item must be a string
-    .required('Ingredients list is required') // The array itself is required
+    .of(string().required('Ingredient is required'))
+    .required('Ingredients list is required') 
     .min(1, 'At least one ingredient is required'), 
     instructions:string().required('instructions is require').min(3,'instuctions must be at least 3 letters')
 })

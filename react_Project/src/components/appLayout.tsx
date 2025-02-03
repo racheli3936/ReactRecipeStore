@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom"
 import NavBar from "./nanBar"
-import { useReducer, useState } from "react"
+import { useReducer } from "react"
 import { currentContext, userReducer } from "../types/user"
 import Home from "./home"
 

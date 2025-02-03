@@ -37,7 +37,7 @@ const Update = () => {
           phone: phoneRef.current?.value||context?.currentUser.phone
         }, {
         headers: {
-          'user-id': context?.currentUser.id // Ensure you replace '123' with the actual user ID as needed
+          'user-id': context?.currentUser.id 
         }
       });
       setUser(res.data.user)

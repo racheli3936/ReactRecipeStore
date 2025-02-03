@@ -1,6 +1,6 @@
 import { Box, Button, Modal, TextField } from "@mui/material"
 import { FormEvent, useContext, useRef, useState } from "react"
-import { currentContext, userIdRes } from "../types/user"
+import { currentContext } from "../types/user"
 import axios from "axios"
 
 const style = {

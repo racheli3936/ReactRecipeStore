@@ -27,7 +27,7 @@ class RecipesStore {
                     instructions: recipe.instructions,
                 }, {
                 headers: {
-                    'user-id': this.authorId// Ensure you replace '123' with the actual user ID as needed
+                    'user-id': this.authorId
                 }
             });
         } catch (error) {
