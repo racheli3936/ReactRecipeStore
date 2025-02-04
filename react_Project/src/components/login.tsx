@@ -1,5 +1,5 @@
 import { FormEvent, useContext, useRef, useState } from "react"
-import { currentContext } from "../types/user"
+import {  CurrentContext } from "../types/user"
 import axios from "axios"
 import { Box, Button, Modal, TextField } from "@mui/material"
 const style = {
@@ -15,7 +15,7 @@ const style = {
 };
 const Login = ({ IsOpen }: { IsOpen: Function }) => {
   const [isClicked, setIsClicked] = useState(false)
-  const context = useContext(currentContext)
+  const context = useContext(CurrentContext)
   const fNameRef = useRef<HTMLInputElement>(null)
   const passwardREf = useRef<HTMLInputElement>(null)
   const [user, setUser] = useState({})

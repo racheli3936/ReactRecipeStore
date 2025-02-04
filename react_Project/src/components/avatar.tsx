@@ -2,10 +2,10 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { green } from '@mui/material/colors';
 import { useContext } from 'react';
-import { currentContext } from '../types/user';
+import { CurrentContext } from '../types/user';
 import { Box } from '@mui/material';
 const LetterAvatars = () => {
-  const context = useContext(currentContext)
+  const context = useContext(CurrentContext)
   let f: string = ''
   if (context) {
     f = context.currentUser.firstName[0]

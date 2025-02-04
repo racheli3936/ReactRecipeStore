@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from "react"
-import { currentContext } from "../types/user"
+import { CurrentContext } from "../types/user"
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -19,7 +19,7 @@ const style = {
 };
 const Update = () => {
   const [isClicked, setIsClicked] = useState(false)
-  const context = useContext(currentContext)
+  const context = useContext(CurrentContext)
   const lNameRef = useRef<HTMLInputElement>(null)
   const addressRef = useRef<HTMLInputElement>(null)
   const emailRef = useRef<HTMLInputElement>(null)

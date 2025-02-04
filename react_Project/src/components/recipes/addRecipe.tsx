@@ -3,7 +3,7 @@ import RecipesStore, {  RecipeType } from "../../store/RecipesStore";
 import { array, object, string } from "yup";
 import { useContext, useEffect, useState } from "react";
 import { Box, Button, Modal, TextField } from "@mui/material";
-import { currentContext } from "../../types/user";
+import { CurrentContext } from "../../types/user";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Outlet, useNavigate } from "react-router-dom";
 
@@ -28,7 +28,7 @@ const schema = object({
     instructions:string().required('instructions is require').min(3,'instuctions must be at least 3 letters')
 })
 const AddRecipe=()=>{
-    const context=useContext(currentContext);
+    const context=useContext(CurrentContext);
     const [click,setClick]=useState(false)
     const navigate=useNavigate()
     const onSubmit: SubmitHandler<Partial<RecipeType>> = (data) => {

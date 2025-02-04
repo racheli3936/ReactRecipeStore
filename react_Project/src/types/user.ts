@@ -12,7 +12,7 @@ export type reducerType={
     currentUser:User,
     dispatch:React.Dispatch<Action>
 }
-export const currentContext=createContext<reducerType|null>(null)
+export const CurrentContext=createContext<reducerType|null>(null)
 export const userIdRes=createContext<string>('')
 type Action={
     type:'CREATE'|'UPDATE'|'GET'|'REMOVE',

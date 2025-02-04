@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import './navBar.css'; 
 import { useContext } from "react";
-import { currentContext } from "../types/user";
+import { CurrentContext } from "../types/user";
 const NavBar=()=>
 {
-    const context=useContext(currentContext) 
+    const context=useContext(CurrentContext) 
     return(
         <>
         <nav>
